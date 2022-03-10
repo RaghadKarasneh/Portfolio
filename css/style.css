@@ -1,0 +1,26 @@
+.my-info{
+    height: 200px;
+    background-image: url("../images/code.jpg");
+    background-repeat: no-repeat;
+    height: 450px;
+    opacity: 0.5;
+}
+.education h2:before,
+.education h2:after,
+.recent-projects h2:before,
+.recent-projects h2:after
+{
+    content: "";
+    width: 400px;
+    height: 1px;
+    background-color: #c8c5c5;
+    display: inline-block;
+}
+.education h2:before,
+.recent-projects h2:before{
+    margin-right: 20px;
+}
+.education h2:after,
+.recent-projects h2:after{
+    margin-left: 20px;
+}
