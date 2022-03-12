@@ -1,6 +1,7 @@
 .my-info{
     height: 200px;
     background-image: url("../images/code.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     height: 450px;
     opacity: 0.5;
