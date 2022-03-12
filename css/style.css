@@ -24,7 +24,7 @@ hr{
 header .container{
     position: absolute;
     left: 20%;
-    top: 20%;
+    top: 12%;
     text-align: center;
     z-index: 3;
     color: white;
@@ -145,7 +145,7 @@ footer .follow-me span{
 footer .follow-me span:first-of-type{
     margin-right: 30px;
 }
-/*The Bottem Footer*/
+/*The Bottom Footer*/
 footer .footer-left{
     float: left;
 }
