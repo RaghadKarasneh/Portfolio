@@ -6,14 +6,30 @@ body{
     color: white;
     font-family: sans-serif;
 }
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    padding: 15px;
+}
 .navbar-brand{
     transform: rotate(-27deg);
     border-style: double;
     padding: 5px;
+    float: left;
 }
-.navbar-nav{
-    position: absolute;
-    right: 20px;
+nav ul{
+    float: right;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
 }
 hr{
     background-color: rgb(145, 145, 145);
@@ -248,10 +264,7 @@ main .recent-projects .text p{
     font-size: 13px;
 }
 .experiances .experiances-container a{
-    color: #ff2efc;
-}
-.experiances .experiances-container a:hover{
-    color: #813580;
+    color: blue;
 }
 /*END Main-Experiances*/
 
@@ -357,9 +370,31 @@ footer .footer-right .right-p{
 /*END FOOTER*/
 
 /************************* MEDIA QUERY *************************/
-@media screen and (min-width:993px) and (max-width:1050px){
+/*Navbar Media Query*/
+.navbar-nav{
+    position: absolute;
+    right: 20px;
+}
+@media (max-width: 640px) {
+  
+    .container-nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      float: none;
+    }
+  
+    nav li {
+      margin: 0.8em 0;
+    }
+  }
+@media screen and (min-width:993px) and (max-width:1300px){
     header .container{
         left: 4%;
+        top: 26%;
     }
     .education h2:before,
     .education h2:after,
@@ -398,6 +433,10 @@ footer .qoute{
 }
 }
 @media screen and (min-width:540px) and (max-width:700px) {
+    header .container{
+        left: 3%;
+        top: 70%!important;
+    }
     main .recent-projects .project{
     height: 500px;
     width: 98%;
@@ -412,7 +451,7 @@ footer .qoute{
     }
     header .container{
         left: 3%;
-        top: 13%;
+        top: 60%;
     }
     .education h2:before,
     .recent-projects h2:before,
@@ -457,8 +496,8 @@ footer .qoute{
         text-align: center;
     }
 }
-@media screen and (max-width:300px){
+@media screen and (max-width:350px){
     header .container{
-        top: 8%;
+        top: 72%;
     }
 }
