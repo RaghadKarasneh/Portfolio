@@ -12,7 +12,37 @@
 <body>
     <!-- Start Header -->
     <header>
-        <div class="container-fluied my-info">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">RK</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="#experiances">Experiances</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#contact-me">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#follow-me">Follow Me</a>
+                    </li>
+
+              </div>
+            </div>
+          </nav>
+          <div class="container-fluied my-info">
             <div class="color-overlay"></div>
             <div class="container">
                 <img src="./images/MyPic.jpg" alt="Raghad ALkarasneh Image" height="150px" width="150px">
@@ -29,27 +59,26 @@
         <div class="container">
             <!-- START Body-brief -->
             <div class="breif">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis suscipit ipsa odio, a neque sequi, rem, exercitationem recusandae mollitia atque molestias. Quis possimus in esse accusamus! Soluta, ut minus.</p>
+                <p>Experienced Computer Engineer with strong skilles in HTML5, CSS3, Bootstrap and Public Speaking  with a Bachelor's degree focused in Computer Engineering from Jordan University of Science and Technology. </p>
             </div>
             <!-- END Body-brief -->
 
             <!--START Body-Education-->
-            <div class="education">
+            <div class="education" id="education">
                 <h2>Education</h2>
                 <div class="row">
                     <!-- First Education-column-->
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <h3>Name</h3>
-                        <p><i>2000-2005</i></p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam amet inventore minima. Molestias, quo sunt accusantium eligendi cumque deleniti molestiae quia aliquam, perferendis ipsam obcaecati dolore labore architecto voluptatem nobis?</p>
+                        <h3>Orange Coding Academy</h3>
+                        <p><i>Feb,2022- Present</i></p>
+                        <p>A full time web development training that targeting youth to prove them skills and preparing them to the labor market.The training lasts for 6 months, followed by a month of hands-on training in a company specializing in it.</p>
                         <button>READ ME</button>
                     </div>
                     <!-- Second Education-column-->
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <h3>Name</h3>
-                        <p><i>2000-2005</i></p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam amet inventore minima. Molestias, quo sunt accusantium 
-                      eligendi cumque deleniti molestiae quia aliquam, perferendis ipsam obcaecati dolore labore architecto voluptatem nobis?</p>
+                        <h4>Jordan University of Science and Technology.</h4>
+                        <p><i>Sep,2013- Feb,2018</i></p>
+                        <p>An internationally renowned university for quality education, community development, and creation that deliver high caliber education and provide professional services that contribute to the progress of knowledge and the development of local communities and humanity. </p>
                         <button>READ ME</button>
                     </div>
                 </div>
@@ -57,97 +86,147 @@
             <!--END Body-Education-->
 
             <!--START Body-Recent Project-->
-            <div class="recent-projects">
+            <div class="recent-projects" id="projects">
                 <h2>Recent Projects</h2>
                 <!--Start The First Row-->
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 project">
-                        <img src="./images/project-logo.jpg" src="From Every Example" height="70%" width="85%">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus aliquam porro numquam ipsum cupiditate, libero ut qui consectetur, commodi tempore voluptas! Labore fuga molestias quisquam est animi modi maiores.</p>
-                        <a href="https://fromeveryexample.org/">Here</a>
-                        <button>Read More</button>
+
+                    <!--First Column-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project project1">
+                        <div class="img"></div>
+                        <div class="overlay"></div> <!-- Dark Layer to make photo darker-->
+                        <div class="overlay2"></div><!-- Diagonal Dark Layer -->
+                        <div class="text">
+                            <h3>FROM EVERY EXAMPLE</h3>
+                            <p>An online media platform that aims to educate its audience on different topics and share inspiring success stories while promoting moral values add inner peace. Built using HTML5, CSS3, JavaScript, JQuery, and Bootstrap.</p>
+                           <p><a href="https://fromeveryexample.org/" target="_blank">Click Here</a></p> 
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 project">
-                        <img src="./images/project-logo.jpg" src="From Every Example" height="70%" width="85%">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus aliquam porro numquam ipsum cupiditate, libero ut 
-                qui consectetur, commodi tempore voluptas! Labore fuga molestias quisquam est animi modi maiores.</p>
-                        <a href="https://fromeveryexample.org/">Here</a>
-                        <button>Read More</button>
+                
+                    <!--Second Column-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project project2">
+                        <div class="img"></div>
+                        <div class="overlay"></div> <!-- Dark Layer to make photo darker-->
+                        <div class="overlay2"></div><!-- Diagonal Dark Layer -->
+                        <div class="text">
+                            <h3>SECOND PROJECT</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam illum odio alias inventore, deleniti ex facilis 
+                            placeat fugit quis nobis totam ab itaque consequatur? Totam facere culpa beatae? Nobis, sunt.</p>
+                           <p><a href="#">Click Here</a></p> 
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 project">
-                        <img src="./images/project-logo.jpg" src="From Every Example" height="70%" width="85%">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus aliquam porro numquam ipsum cupiditate, libero ut 
-                qui consectetur, commodi tempore voluptas! Labore fuga molestias quisquam est animi modi maiores.</p>
-                        <a href="https://fromeveryexample.org/">Here</a>
-                        <button>Read More</button>
+             
+                <!--Third Column-->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project project3">
+                    <div class="img"></div>
+                    <div class="overlay"></div> <!-- Dark Layer to make photo darker-->
+                    <div class="overlay2"></div><!-- Diagonal Dark Layer -->
+                    <div class="text">
+                        <h3>THIRD PROJECT</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam illum odio alias inventore, deleniti ex facilis 
+                         placeat fugit quis nobis totam ab itaque consequatur? Totam facere culpa beatae? Nobis, sunt.</p>
+                       <p><a href="#">Click Here</a></p> 
                     </div>
                 </div>
+            </div>
                 <!--Start The Second Row-->
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 project">
-                        <img src="./images/project-logo.jpg" src="From Every Example" height="70%" width="85%">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus aliquam porro numquam ipsum cupiditate, libero ut qui consectetur, commodi tempore voluptas! Labore fuga molestias quisquam est animi modi maiores.</p>
-                        <a href="https://fromeveryexample.org/">Here</a>
-                        <button>Read More</button>
+                    <!--First Column-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project project4">
+                        <div class="img"></div>
+                        <div class="overlay"></div> <!-- Dark Layer to make photo darker-->
+                        <div class="overlay2"></div><!-- Diagonal Dark Layer -->
+                        <div class="text">
+                            <h3>FOURTH PROJECT</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam illum odio alias inventore, deleniti 
+                            placeat fugit quis nobis totam ab itaque consequatur? Totam facere culpa beatae? Nobis, sunt.</p>
+                           <p><a href="#">Click Here</a></p> 
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 project">
-                        <img src="./images/project-logo.jpg" src="From Every Example" height="70%" width="85%">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus aliquam porro numquam ipsum cupiditate, libero ut 
-                qui consectetur, commodi tempore voluptas! Labore fuga molestias quisquam est animi modi maiores.</p>
-                        <a href="https://fromeveryexample.org/">Here</a>
-                        <button>Read More</button>
+                
+                    <!--Second Column-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project project5">
+                        <div class="img"></div>
+                        <div class="overlay"></div> <!-- Dark Layer to make photo darker-->
+                        <div class="overlay2"></div><!-- Diagonal Dark Layer -->
+                        <div class="text">
+                            <h3>FIFTH PROJECT</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam illum odio alias inventore, deleniti 
+                            placeat fugit quis nobis totam ab itaque consequatur? Totam facere culpa beatae? Nobis, sunt.</p>
+                           <p><a href="#">Click Here</a></p> 
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 project">
-                        <img src="./images/project-logo.jpg" src="From Every Example" height="70%" width="85%">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus aliquam porro numquam ipsum cupiditate, libero ut 
-                qui consectetur, commodi tempore voluptas! Labore fuga molestias quisquam est animi modi maiores.</p>
-                        <a href="https://fromeveryexample.org/">Here</a>
-                        <button>Read More</button>
+             
+                <!--Third Column-->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project project6">
+                    <div class="img"></div>
+                    <div class="overlay"></div> <!-- Dark Layer to make photo darker-->
+                    <div class="overlay2"></div><!-- Diagonal Dark Layer -->
+                    <div class="text">
+                        <h3>SIXTH PROJECT</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam illum odio alias inventore, deleniti ex f
+                         placeat fugit quis nobis totam ab itaque consequatur? Totam facere culpa beatae? Nobis, sunt.</p>
+                       <p><a href="#">Click Here</a></p> 
                     </div>
                 </div>
-             </div>
+            </div>
+                </div>
+            
             <!--END Body-Recent Project-->
 
             <!--Start Body- Experiances-->
-            <div class="experiances">
+            <div class="experiances" id="experiances">
                 <h2>Experiances</h2>
                 <div class="experiances-container">
-                    <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing elit</b>. At maiores quia quam eaque, cum facilis placeat. Reprehenderit voluptatibus doloremque, harum praesentium fuga illo repudiandae exercitationem laborum esse voluptate dignissimos porro.</p>
+                  <ul>
+                    <li><b>Orange Coding Academy Trainee</b></li> 
+                    <p> The aim of this trainnig is to develop my programming skills to keeping up with the labor market</p>
+                   <li><b>Front-end Developer Freelancer</b></li> 
+                    <p> Built [ <a href="https://fromeveryexample.org/" target="_blank">FROM EVERY EXAMPLE</a> ] website using: HTML5, CSS3, JavaScript, Jquerym and Bootstrap</p>
+                 </ul>
                 </div>
             </div>
             <!--End Body- Experiances-->
+        </div>
     </main>
     <!--END Main-->
+
     <hr>
+
+
     <!--Start Footer-->
     <footer class="container-fluied">
         <div class="container">
             <div class="row">
             <!--Start Footer- Contact-->
-            <div class="col-md-3 contact">
+            <div class="col-lg-3 col-md-6 contact" id="contact-me">
                 <h3>CONTACT</h3>
                 <p class="phone-number">+962789871627</p>
                 <p class="email">raghad.karasneh@gmail.com</p>
-                <p class="location">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis amet facere praesentium omnis deleniti exercitationem corporis</p>
+                <p class="location">
+                    Aqaba- Jordan
+                    <br>
+                    Fifth area, Farbi Street, Bulding 1</p>
             </div>
             <!--Start Footer- Follow Me-->
-            <div class="col-md-3  follow-me">
+            <div class="col-lg-3 col-md-6  follow-me" id="follow-me">
                 <h3>FOLLOW ME</h3>
-                <span class="fa fa-github-square fa-3x"></span>
-                <span class="fa fa-linkedin fa-3x"></span>
+               <a href="https://github.com/RaghadKarasneh" target="_blank" class="github"><span class="fa fa-github-square fa-3x"></span></a>
+               <a href="https://www.linkedin.com/in/raghad-al-karasneh-385a23168/" target="_blank" class="linkedin"> <span class="fa fa-linkedin fa-3x"></span></a>
             </div>
             <!--Start Footer- Widget Me-->
-            <div class=" col-md-3 widget-me">
-                <h3>WIDGET ME</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur optio minus ipsa corporis molestiae atque sit error tempore qui accusamus autem libero, voluptatum laudantium eveniet. Architecto eum doloribus id.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae aperiam suscipit tempore officia rerum et dicta veritatis, qui odio culpa tempora alias magnam voluptates minima quibusdam harum quidem, ea delectus?</p>
-            </div>
-            <!--Start Footer- Form Widget-->
-            <div class="col-md-3 form-widget">
-                <h3>FORM WIDGET</h3>
-                <p class="phone-number">+962789871627</p>
-                <p class="email">raghad.karasneh@gmail.com</p>
-                <p class="location">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis amet facere praesentium omnis deleniti exercitationem corporis</p>
+            <div class="col-lg-6 col-md-6 qoute">
+                <div class="first-qoute">
+                    <q><i>A dream doesn’t become a reality through magic; it takes sweat, determination, and hard work.</i></q>
+                    <br>
+                    <p>-Colin Powell</p>
+                </div>
+                <div class="second-qoute">
+                    <q><i>Successful people are not gifted; they just work hard, then succeed on purpose.</i></q>
+                    <br>
+                    <p>- G.K. Nielson</p>
+                </div>
+                
             </div>
         </div>
         </div>
