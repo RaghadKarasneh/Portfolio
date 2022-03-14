@@ -13,5 +13,8 @@ including:
 https://mockittapp.wondershare.com/sigma/design/pbl0oxnezhl3jiei
 
 ## Portfolio Wireframe
+* Home page:
 ![CHEES!](./images/Wireframe-Home.png)
+
+* Skills page:
 ![CHEES!](./images/Wireframe-Skills.png)
