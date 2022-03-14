@@ -379,6 +379,83 @@ footer .footer-right .right-p{
 }
 /*END FOOTER*/
 
+/***** Skills Page****/
+.video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+.my-skills-h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.skills{
+    background-color: #393838;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+.skills .technical-skills,
+.skills .soft-skills,
+.skills form{
+    padding: 30px 50px;
+}
+.skills  h2{
+    color: white;
+    text-align: left;
+}
+.skills .technical-skills .html5,
+.skills .technical-skills .css3,
+.skills .technical-skills .github,
+.skills .soft-skills .team-work,
+.skills .soft-skills .searching,
+.skills .soft-skills .time-mangment,
+.skills .soft-skills .presentaion,
+.skills form
+{
+    margin-bottom: 40px;
+    margin-left:20px
+}
+.skills label{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.skills .progress{
+    width: 70%;
+    height: 20px;
+}
+form h2{
+    padding-bottom: 60px;
+}
+form .form-input{
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+form .form-input-date{
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+form .form-group{
+    margin: 40px 0;
+}
+form label{
+    margin-right: 15px;
+}
+form .label{
+    font-size: 20px;
+}
 /************************* MEDIA QUERY *************************/
 /*Navbar Media Query*/
 .navbar-nav{

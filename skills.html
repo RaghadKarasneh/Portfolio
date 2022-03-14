@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container-nav">
+        <nav>
+                
+              <a class="navbar-brand" href="#">
+                  <div class="border"></div>
+                  <span class="logo">RK</span>
+                </a>
+                <ul>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="index.html#education">Education</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="index.html#experiances">Experiances</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="index.html#contact-me">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#follow-me">Follow Me</a>
+                    </li>
+          </nav>
+        </div>
+    </header>
+    
+    <!-- END Header -->
+
+    <!-- START Main -->
+    <main>
+        <div class="container">
+            <video src="./images/bg-video.mp4" autoplay loop muted type="mp" class="video"></video>
+            <h1 class="my-skills-h1">My Skills</h1>
+            <div class="skills">
+                <!--Technical Skills-->
+                <div class="technical-skills">
+                    <h2>Technical Skills</h2>
+                    <div class="html5">
+                        <label>HTML5</label><span class="fa fa-html5"></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="css3">
+                      <label>CSS3</label>
+                      <span class="fa fa-css3"></span>
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-striped  bg-warning" role="progressbar" style="width: 85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                    <div class="github">
+                        <label>Github</label>
+                        <span class="fa fa-github"></span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped  bg-danger" role="progressbar" style="width: 75%" aria-valuenow="10" 
+                            aria-valuemin="0" aria-valuemax="100">75%</div>
+                          </div>
+                      </div>
+                </div>
+                  <!--Soft Skills-->
+                <div class="soft-skills">
+                    <h2>Soft Skills</h2>
+                    <div class="team-work">
+                        <label>Team Work</label>
+                        <div class="progress">
+                         <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 95%" aria-valuenow="10" 
+                        aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="searching">
+                        <label>Searching skills</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped  bg-warning" role="progressbar" style="width: 95%" aria-valuenow="10" 
+                            aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="time-mangment">
+                        <label>Time Mangment</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped  bg-danger" role="progressbar" style="width: 85%" aria-valuenow="10" 
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                    <div class="presentaion">
+                        <label>Presentation Skills</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="10" 
+                            aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Job Tracking Form-->
+                <form>
+                    <div class="form-group">
+                      <h2>Job Tracking Form</h2>
+                      <label for="JobTitle" class="label">Job Title</label>
+                      <br>
+                      <input class="form-input" type="text" class="form-control" id="JobTitle" placeholder="Job Title">
+                    </div>
+                    <div class="form-group">
+                      <label for="companyName" class="label">Company Name</label>
+                      <br>
+                      <input class="form-input" type="text" class="form-control" id="companyName" placeholder="Company Name">
+                    </div>
+                    <div>
+                        <p class="label">City:</p>
+                        <input type="radio" aria-label="Radio button for following text input" name="clasess"> <label> Amman</label>
+                        <input type="radio" aria-label="Radio button for following text input" name="clasess"> <label> Aqaba</label>
+                        <input type="radio" aria-label="Radio button for following text input" name="clasess"> <label> Other</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="interviewDate" class="label">Job Interview Date</label>
+                        <input class="form-input-date" type="date" class="form-control" id="interviewDate" placeholder="DD/MM/YYYY">
+                      </div>
+                      <div class="form-group">
+                      <label for="jobTitle" class="label">Notes</label>
+                      <br>
+                      <input class="form-input" type="text" class="form-control" id="jobTitle" placeholder="Important Notes">
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+                    <button type="reset" class="btn btn-success btn-lg btn-block">Reset</button>
+                  </form>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <!--Start Footer-->
+    <footer class="container-fluied">
+        <div class="container">
+            <div class="row">
+            <!--Start Footer- Contact-->
+            <div class="col-lg-3 col-md-6 contact" id="contact-me">
+                <h3>CONTACT</h3>
+                <p class="phone-number">+962789871627</p>
+                <p class="email">raghad.karasneh@gmail.com</p>
+                <p class="location">
+                    Aqaba- Jordan
+                    <br>
+                    Fifth area, Farbi Street, Bulding 1</p>
+            </div>
+            <!--Start Footer- Follow Me-->
+            <div class="col-lg-3 col-md-6  follow-me" id="follow-me">
+                <h3>FOLLOW ME</h3>
+               <a href="https://github.com/RaghadKarasneh" target="_blank" class="github"><span class="fa fa-github-square fa-3x"></span></a>
+               <a href="https://www.linkedin.com/in/raghad-al-karasneh-385a23168/" target="_blank" class="linkedin"> <span class="fa fa-linkedin fa-3x"></span></a>
+            </div>
+            <!--Start Footer- Widget Me-->
+            <div class="col-lg-6 col-md-6 qoute">
+                <div class="first-qoute">
+                    <q><i>A dream doesn’t become a reality through magic; it takes sweat, determination, and hard work.</i></q>
+                    <br>
+                    <p>-Colin Powell</p>
+                </div>
+                <div class="second-qoute">
+                    <q><i>Successful people are not gifted; they just work hard, then succeed on purpose.</i></q>
+                    <br>
+                    <p>- G.K. Nielson</p>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="footer-left"><p>Lorem ipsum dolor sit amet consectetur</p></div>
+            <div class="footer-right">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p class="right-p">consectetur adipisicing elit</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END Body -->
+</body>
+</html>
