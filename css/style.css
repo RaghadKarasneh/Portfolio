@@ -16,10 +16,20 @@ nav{
     padding: 15px;
 }
 .navbar-brand{
-    transform: rotate(-27deg);
-    border-style: double;
-    padding: 5px;
     float: left;
+}
+.navbar-brand .border{
+    height: 33px;
+    width: 35px;
+    background-color: #214cc4;
+    transform: rotate(-27deg);
+}
+.navbar-brand .logo{
+    color: white;
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    padding: 4px;
 }
 nav ul{
     float: right;
@@ -51,7 +61,7 @@ hr{
 }
 header .container{
     position: absolute;
-    left: 19%;
+    left: 14%;
     top: 18%;
     text-align: center;
     z-index: 3;
@@ -143,7 +153,7 @@ main .recent-projects .project2 .img{
     background-position: 0 0;
 }
 main .recent-projects .project3 .img{
-    background: url('../images/project3.png');
+    background: url('../images/project3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -169,8 +179,8 @@ main .recent-projects .project6 .img{
 main .recent-projects .overlay{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 96%;
+    left: 14px;
+    width: 92.5%;
     height: 100%;
     background-color: rgba(0,0,0,0.3);
 }
@@ -428,9 +438,9 @@ footer .footer-right .right-p{
     main .recent-projects .project6{
         margin: 40px auto;
     }
-footer .qoute{
-    margin: 20px auto;
-}
+    footer .qoute{
+        margin: 20px auto;
+    }
 }
 @media screen and (min-width:540px) and (max-width:700px) {
     header .container{
@@ -443,6 +453,11 @@ footer .qoute{
     }
     .experiances .experiances-container{
         height: 250px !important;
+    }
+
+    .recent-projects .project.overlay{
+        left: 0px;
+        width: 97%;
     }
 }
 @media screen and (min-width:256px) and (max-width: 550px) {
@@ -475,6 +490,10 @@ footer .qoute{
         padding-left: 0;
         margin-bottom: 20px;
         height: 400px;
+    }
+    .recent-projects .project .overlay{
+        left: 0px;
+        width: 97%;
     }
     .experiances .experiances-container{
         left: 0;
