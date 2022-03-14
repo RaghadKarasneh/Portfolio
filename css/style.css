@@ -520,6 +520,9 @@ form .label{
     }
 }
 @media screen and (min-width:540px) and (max-width:700px) {
+    header ul{
+        margin-right: 40px;
+    }
     header .container{
         left: 3%;
         top: 70%!important;
@@ -538,6 +541,9 @@ form .label{
     }
 }
 @media screen and (min-width:256px) and (max-width: 550px) {
+    header ul{
+        margin-right: 40px;
+    }
     header .container-fluied{
         width: 100%;
     }
@@ -592,8 +598,11 @@ form .label{
         text-align: center;
     }
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:380px){
+    header ul{
+        margin-right: 40px;
+    }
     header .container{
-        top: 72%;
+        top: 78%!important;
     }
 }
