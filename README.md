@@ -10,7 +10,7 @@ including:
 * My Contact information 
 
 ## Portfolio Mockup link
-(https://mockittapp.wondershare.com/sigma/design/pbl0oxnezhl3jiei) 
+https://mockittapp.wondershare.com/sigma/design/pbl0oxnezhl3jiei
 
 ## Portfolio Wireframe
 ![CHEES!](./images/wireframe.png)
