@@ -5,6 +5,12 @@ body{
     background: linear-gradient(197deg, #252525, #3e3e3e,#545454);
     color: white;
     font-family: sans-serif;
+    text-align: unset;
+}
+
+main,
+footer{
+    overflow: hidden;
 }
 .container-nav{
     display: flex;
@@ -12,41 +18,47 @@ body{
     text-align: center;
 }
 nav{
+    position: fixed;
+    background-color: #2d2d2d;;
+    z-index: 99999;
     width: 100%;
-    padding: 15px;
+    padding: 10px 15px;
 }
 .navbar-brand{
     float: left;
 }
 .navbar-brand .border{
-    height: 33px;
-    width: 35px;
+    border: 7px double #dee2e6 !important;
+    height: 50px;
+    width: 52px;
     background-color: #214cc4;
-    transform: rotate(-27deg);
+    transform: rotate(-52deg);
 }
 .navbar-brand .logo{
     color: white;
     position: absolute;
-    top: 17px;
+    top: 13px;
     left: 14px;
-    padding: 4px;
+    padding: 13px;
 }
 nav ul{
     float: right;
     list-style: none;
     padding: 0;
     display: flex;
+    padding-top: 10px;
 }
 nav ul li{
     display: inline-block;
     text-decoration: none;
+    margin-top: 10px;
 }
 hr{
     background-color: rgb(145, 145, 145);
 }
 /* START HEADER */
-.my-info{
-    height: 200px;
+.my-info
+{
     background-image: url("../images/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,16 +74,17 @@ hr{
 header .container{
     position: absolute;
     left: 14%;
-    top: 18%;
+    top: 13%;
     text-align: center;
     z-index: 3;
     color: white;
 }
 header .container img{
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 header .container h1,
-header .container h4{
+header .container h5{
     line-height: 1.5;
 }
 /* END HEADER */
@@ -83,14 +96,14 @@ main .breif{
     margin-top: 50px;
 }
 main .breif p{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: center;
 }
 /*END Main- Breif*/
 
 /*Start Main- Education*/
-main h2{
+main h1{
     text-align: center;
     color: white;
     padding-bottom: 80px;
@@ -132,13 +145,15 @@ main .recent-projects .project{
     text-align: center;
     overflow: hidden;
     width: 100%;
-    height: 330px;
+    height: 250px;
     cursor: pointer;
+    margin-right: 50px;
+    margin-left: 30px;
 }
 main .recent-projects .project .img{
    position: relative;
    width: 100%;
-   height: 100%;
+   height:100%;
 }
 main .recent-projects .project1 .img{
     background: url('../images/project1.jpg');
@@ -180,7 +195,7 @@ main .recent-projects .overlay{
     position: absolute;
     top: 0;
     left: 14px;
-    width: 92.5%;
+    width: 90%;
     height: 100%;
     background-color: rgba(0,0,0,0.3);
 }
@@ -189,7 +204,7 @@ main .recent-projects .overlay2{
     top: 0;
     left:-150%;
     width: 120%;
-    height: 100%;
+    height: 106.5%;
     background-color: rgba(0,0,0,0.7);
     transform: skewX(-30deg);
     transition: 0.5s;
@@ -199,13 +214,13 @@ main .recent-projects .project:hover .overlay2{
 }
 main .recent-projects .text{
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 80%;
     color: black;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 0;
     z-index: 1000;
     text-shadow: 5px 5px 10px black;
 }
@@ -216,12 +231,11 @@ main .recent-projects .text h3{
     transition: .5s;
     transition-timing-function: linear;
     color: #fff;
-    margin-top: 20px;
    }
 main .recent-projects .project:hover .text h3{
     transform: translateY(0);
     opacity: 1;
-    transition-delay: .75s;
+    transition-delay: .5s;
 }
 main .recent-projects .project .text h3:before,
 main .recent-projects .project .text h3:after{
@@ -230,6 +244,7 @@ main .recent-projects .project .text h3:after{
     height: 0%;
 }
 main .recent-projects .text p{
+    font-size: 13px;
     line-height: 1.2;
     opacity: 0;
     transform: translateY(10px);
@@ -246,7 +261,7 @@ main .recent-projects .text p{
     -o-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-    transition-delay: .85s;
+    transition-delay: .6s;
   }
   main .recent-projects .project .text a{
     color: #e809e5;
@@ -286,12 +301,12 @@ main .recent-projects .text p{
 .recent-projects{
     margin-top: 50px;
 }
-.education h2:before,
-.education h2:after,
-.recent-projects h2:before,
-.recent-projects h2:after,
-.experiances h2:before,
-.experiances h2:after
+.education h1:before,
+.education h1:after,
+.recent-projects h1:before,
+.recent-projects h1:after,
+.experiances h1:before,
+.experiances h1:after
 {
     content: "";
     width: 400px;
@@ -299,14 +314,14 @@ main .recent-projects .text p{
     background-color: #c8c5c5;
     display: inline-block;
 }
-.education h2:before,
-.recent-projects h2:before,
-.experiances h2:before{
+.education h1:before,
+.recent-projects h1:before,
+.experiances h1:before{
     margin-right: 20px;
 }
-.education h2:after,
-.recent-projects h2:after,
-.experiances h2:after{
+.education h1:after,
+.recent-projects h1:after,
+.experiances h1:after{
     margin-left: 20px;
 }
 .education .row,
@@ -332,6 +347,7 @@ footer .contact{
     transition: 1s ease-in-out;
 }
 footer .follow-me{
+    margin-right: 60px;
     text-align: center;
     transition: 1s ease-in-out;
 }
@@ -370,16 +386,6 @@ footer .qoute .second-qoute {
 footer .qoute p{
     margin-top: 10px;
 }
-/*The Bottom Footer*/
-footer .footer-left{
-    float: left;
-}
-footer .footer-right{
-    float: right;
-}
-footer .footer-right .right-p{
-    text-align: right;
-}
 /*END FOOTER*/
 
 /***** Skills Page****/
@@ -398,8 +404,8 @@ footer .footer-right .right-p{
 .my-skills-h1{
     color: white;
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-top: 200px;
 }
 .skills{
     background-color: #393838;
@@ -490,88 +496,148 @@ form .label{
 @media screen and (min-width:993px) and (max-width:1300px){
     header .container{
         left: 4%;
-        top: 26%;
+        top: 16.5%;;
     }
-    .education h2:before,
-    .education h2:after,
-    .recent-projects h2:before,
-    .recent-projects h2:after,
-    .experiances h2:before,
-    .experiances h2:after
+    header .container img{
+        margin-bottom: 0;
+    }
+    header .container h2{
+        margin-bottom: 0;
+    }
+    .education h1:before,
+    .education h1:after,
+    .recent-projects h1:before,
+    .recent-projects h1:after,
+    .experiances h1:before,
+    .experiances h1:after
 {
     width: 200px;
 
-}}
-@media screen and (min-width:701px) and (max-width:992px) {
+}
+main .recent-projects .row{
+    margin-bottom: 50px;
+}
+main .recent-projects .img{
+width: 110%!important;
+}
+main .recent-projects .overlay{
+    width: 94%;
+}
+main .project .overlay2{
+    left: -155%;
+}
+main .project h3{
+    margin-left: 12px;
+    font-size: 1.5rem;
+}
+main .project p{ 
+    margin-bottom: 1px;
+    margin-top: 5px !important;
+}
+}
+@media screen and (min-width:700px) and (max-width:992px) {
     header .container{
         left: 8%;
         top: 9%;
     }
-    .education h2:before,
-    .education h2:after,
-    .recent-projects h2:before,
-    .recent-projects h2:after,
-    .experiances h2:before,
-    .experiances h2:after
+    header .container img{
+        margin-bottom: 5px;
+    }
+    header .container h2{
+        margin-bottom: 0;
+    }
+    .education h1:before,
+    .education h1:after,
+    .recent-projects h1:before,
+    .recent-projects h1:after,
+    .experiances h1:before,
+    .experiances h1:after
 {
     width: 200px;
 
 }
-    main .recent-projects .row{
-        margin-bottom: 0;
-    }
-    main .recent-projects .project3,
-    main .recent-projects .project6{
-        margin: 40px auto;
-    }
-    footer .qoute{
-        margin: 20px auto;
-    }
+main .recent-projects .row{
+    margin-bottom:50px
 }
-@media screen and (min-width:540px) and (max-width:700px) {
-    header ul{
-        margin-right: 40px;
-    }
-    header .container{
-        left: 3%;
-        top: 70%!important;
-    }
-    main .recent-projects .project{
-    height: 500px;
-    width: 98%;
-    }
+main .recent-projects .project{
+    height: 320px;
+    margin-right: 0;
+    margin-left: 0;
+}
+main .recent-projects .project3,
+main .recent-projects .project6{
+    margin-top: 50px;
+    margin-left: 180px;
+}
+main .recent-projects .overlay{
+    width: 92%;
+}
     .experiances .experiances-container{
-        height: 250px !important;
+        height: 379px !important;
     }
 
     .recent-projects .project.overlay{
         left: 0px;
         width: 97%;
     }
+    footer{
+        text-align: center;
+    }
+    footer .follow-me{
+        margin-right: 0;
+    }
+    footer .qoute{
+        height: 285px;
+        margin-left: 180px;
+    }
+}
+@media screen and (min-width:551px) and (max-width:770px) {
+    header .container{
+        left: 6%;
+        top: 10%;
+    } 
+    header .container img{
+        margin-bottom: 10px;
+    }
+    .education h1:before,
+    .education h1:after,
+    .recent-projects h1:before,
+    .recent-projects h1:after,
+    .experiances h1:before,
+    .experiances h1:after
+    {
+        width: 200px;   
+    }
+    main .recent-projects .overlay{
+        width: 93%;
+    }
 }
 @media screen and (min-width:256px) and (max-width: 550px) {
     header ul{
-        margin-right: 40px;
+        margin-right:80px;
     }
     header .container-fluied{
-        width: 100%;
+        width: 120%;
+        margin-top:425px;
     }
     header .container{
         left: 3%;
-        top: 60%;
+        top: 52%;
     }
     .recent-projects .project{
         height: 400px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
-    .education h2:before,
-    .recent-projects h2:before,
-    .experiances h2:before{
+    .education h1:before,
+    .recent-projects h1:before,
+    .experiances h1:before{
         margin-right: 0px;
         width: 100%;
     }
-    .education h2:after,
-    .recent-projects h2:after,
-    .experiances h2:after{
+    .education h1:after,
+    .recent-projects h1:after,
+    .experiances h1:after{
          margin-left: 0px;
          width: 100%;
     }
@@ -597,6 +663,9 @@ form .label{
     footer{
         text-align: center;
     }
+    footer .follow-me{
+        margin-right: 0;
+    }
     footer .contact,
     footer .follow-me,
     footer .qoute{
@@ -609,12 +678,78 @@ form .label{
     footer .footer-right .right-p{
         text-align: center;
     }
+     /*Skills Page*/
+ .skills-container{
+    margin-top: 500px;
+}
+.skills-container .my-skills-h1{
+    padding-bottom: 70px;
+}
+}
+@media screen and (min-width:450px) and (max-width:540px){
+    header .container-fluied{
+        margin-top: 423px;
+    }
+    header .container{
+        top:65%
+    }
+    main .recent-projects .project{
+        height: 500px !important;
+    }
+    main .recent-projects .text h3{
+        margin-bottom: 40px;
+        font-size: 2.2rem;
+    }
+    main .recent-projects .text p {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:380px){
+    body div{
+        padding-left: 5px!important;
+    }
+    header nav ul{
+        margin-right: 80px;
+    }
+    header .container-fluied{
+        width: 110%;
+    }
     header ul{
         margin-right: 40px;
     }
     header .container{
-        top: 78%!important;
+        top: 73%!important;
+    }
+    main .recent-projects .row {
+        margin-bottom: 50px;
+    }
+    main .recent-projects .project{
+        height: 400px !important;
+    }
+    .experiances .experiances-container{
+        height: 625px;
+    }
+    .experiances .experiances-container p{
+        margin: 20px 0;
+        font-size: 14px;
+    }
+    .skills form{
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:300px){
+    header .container{
+        top: 72%!important;
+    }
+    main .project .overlay2{
+        left: -165%;
+    }
+    main .project1 .img,
+    main .project2 .img,
+    main .project3 .img,
+    main .project4 .img,
+    main .project5 .img,
+    main .project6 .img{
+        background-position: -50px 0px !important;
     }
 }
