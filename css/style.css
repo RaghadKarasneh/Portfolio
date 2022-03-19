@@ -7,7 +7,6 @@ body{
     font-family: sans-serif;
     text-align: unset;
 }
-
 main,
 footer{
     overflow: hidden;
@@ -56,6 +55,7 @@ nav ul li{
 hr{
     background-color: rgb(145, 145, 145);
 }
+
 /* START HEADER */
 .my-info
 {
@@ -331,6 +331,7 @@ main .recent-projects .text p{
     left: 3%;
 }
 /*END Common Main sections' properties*/
+
 /*END MAIN*/
 
 /*START FOOTER*/
@@ -388,7 +389,7 @@ footer .qoute p{
 }
 /*END FOOTER*/
 
-/***** Skills Page****/
+/***** Skills Page ****/
 .video{
     width: 100vw;
     height: 100vh;
@@ -471,6 +472,7 @@ form label{
 form .label{
     font-size: 20px;
 }
+
 /************************* MEDIA QUERY *************************/
 /*Navbar Media Query*/
 .navbar-nav{
@@ -509,33 +511,32 @@ form .label{
     .recent-projects h1:before,
     .recent-projects h1:after,
     .experiances h1:before,
-    .experiances h1:after
-{
-    width: 200px;
+    .experiances h1:after{
+        width: 200px;
 
+    }
+    main .recent-projects .row{
+        margin-bottom: 50px;
+    }
+    main .recent-projects .img{
+        width: 110%!important;
+    }
+    main .recent-projects .overlay{
+        width: 94%;
+    }
+    main .project .overlay2{
+        left: -155%;
+    }
+    main .project h3{
+        margin-left: 12px;
+        font-size: 1.5rem;
+    }
+    main .project p{ 
+        margin-bottom: 1px;
+        margin-top: 5px !important;
+    }
 }
-main .recent-projects .row{
-    margin-bottom: 50px;
-}
-main .recent-projects .img{
-width: 110%!important;
-}
-main .recent-projects .overlay{
-    width: 94%;
-}
-main .project .overlay2{
-    left: -155%;
-}
-main .project h3{
-    margin-left: 12px;
-    font-size: 1.5rem;
-}
-main .project p{ 
-    margin-bottom: 1px;
-    margin-top: 5px !important;
-}
-}
-@media screen and (min-width:700px) and (max-width:992px) {
+@media screen and (min-width:700px) and (max-width:992px){
     header .container{
         left: 8%;
         top: 9%;
@@ -552,30 +553,28 @@ main .project p{
     .recent-projects h1:after,
     .experiances h1:before,
     .experiances h1:after
-{
-    width: 200px;
-
-}
-main .recent-projects .row{
-    margin-bottom:50px
-}
-main .recent-projects .project{
-    height: 320px;
-    margin-right: 0;
-    margin-left: 0;
-}
-main .recent-projects .project3,
-main .recent-projects .project6{
-    margin-top: 50px;
-    margin-left: 180px;
-}
-main .recent-projects .overlay{
-    width: 92%;
-}
+    {
+        width: 200px;
+    }
+    main .recent-projects .row{
+        margin-bottom:50px
+    }
+    main .recent-projects .project{
+        height: 320px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    main .recent-projects .project3,
+    main .recent-projects .project6{
+        margin-top: 50px;
+        margin-left: 180px;
+    }
+    main .recent-projects .overlay{
+        width: 92%;
+    }
     .experiances .experiances-container{
         height: 379px !important;
     }
-
     .recent-projects .project.overlay{
         left: 0px;
         width: 97%;
@@ -604,8 +603,7 @@ main .recent-projects .overlay{
     .recent-projects h1:before,
     .recent-projects h1:after,
     .experiances h1:before,
-    .experiances h1:after
-    {
+    .experiances h1:after{
         width: 200px;   
     }
     main .recent-projects .overlay{
@@ -679,12 +677,13 @@ main .recent-projects .overlay{
         text-align: center;
     }
      /*Skills Page*/
- .skills-container{
-    margin-top: 500px;
-}
-.skills-container .my-skills-h1{
-    padding-bottom: 70px;
-}
+
+    .skills-container{
+        margin-top: 500px;
+    }
+    .skills-container .my-skills-h1{
+        padding-bottom: 70px;
+    }
 }
 @media screen and (min-width:450px) and (max-width:540px){
     header .container-fluied{
@@ -752,7 +751,10 @@ main .recent-projects .overlay{
     }
 }
 @media screen and (min-width:300px) and (max-width:360px){
- header .container{
-     top: 62% !important;
- }
+    header .container{
+        top: 62% !important;
+    }
+    main .recent-projects .overlay2{
+        left: -155% !important;
+    }
 }
