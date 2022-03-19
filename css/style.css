@@ -755,6 +755,6 @@ form .label{
         top: 62% !important;
     }
     main .recent-projects .overlay2{
-        left: -155% !important;
+        left: -155%;
     }
 }
